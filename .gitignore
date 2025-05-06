@@ -1,25 +1,74 @@
-# CakePHP 3
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-/vendor/*
-/config/app.php
+# Mac-specific directory that no other operating system needs.
+.DS_Store
 
-/tmp/cache/models/*
-!/tmp/cache/models/empty
-/tmp/cache/persistent/*
-!/tmp/cache/persistent/empty
-/tmp/cache/views/*
-!/tmp/cache/views/empty
-/tmp/sessions/*
-!/tmp/sessions/empty
-/tmp/tests/*
-!/tmp/tests/empty
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+*~
+bower_components
 
-/logs/*
-!/logs/empty
+# vs
+.vscode
 
-# CakePHP 2
+# Java
+*.class
+hs_err_pid*
 
-/app/tmp/*
-/app/Config/core.php
-/app/Config/database.php
-/vendors/*
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.log
+*.err
+
+# Maven
+target/
+**/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# Eclipse project files
+.project
+.classpath
+.settings
+[Bb]in/
+
+# Composer #
+/vendor
+
+# PhpCsFixer #
+.php-cs-fixer.cache
+.phpunit.result.cache
+
+# Package Files #
+**/Runtime/
+**/nbproject/private/
+thinkphp
+runtime
+
+# API Doc #
+apidocs
+/uhouzz/docs
+/uhomes/docs
+
+# Local Config #
+.env
+.env-prod
+.env-pre
+.env-testing
+
