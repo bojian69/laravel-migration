@@ -15,3 +15,12 @@ yarn-error.log
 /.vscode
 /test-apps
 .DS_Store
+/.phpunit.cache
+/public/build
+/storage/pail
+.env.production
+.phpactor.json
+/auth.json
+/.fleet
+/.nova
+/.zed
