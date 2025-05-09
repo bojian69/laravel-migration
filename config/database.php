@@ -112,6 +112,87 @@ return [
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
+        /**
+         * 数据库结构同步-表结构配置
+         * pro_baseline 基线库
+         * pro_xxx xxx 业务库
+         */
+        'pro_baseline' => [
+            'driver' => 'mysql',
+            'url' => env('DB_URL'),
+            'host' => env('DB_BASELINE_HOST', '127.0.0.1'),
+            'port' => env('DB_BASELINE_PORT', '3306'),
+            'database' => env('DB_BASELINE_DATABASE', 'pro_baseline'),
+            'username' => env('DB_BASELINE_USERNAME', 'root'),
+            'password' => env('DB_BASELINE_PASSWORD', ''),
+            'unix_socket' => env('DB_BASELINE_SOCKET', ''),
+            'charset' => env('DB_BASELINE_CHARSET', 'utf8mb4'),
+            'collation' => env('DB_BASELINE_COLLATION', 'utf8mb4_unicode_ci'),
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+        'pro_basic' => [
+            'driver' => 'mysql',
+            'url' => env('DB_URL'),
+            'host' => env('DB_BASIC_HOST', '127.0.0.1'),
+            'port' => env('DB_BASIC_PORT', '3306'),
+            'database' => env('DB_BASIC_DATABASE', 'pro_basic'),
+            'username' => env('DB_BASIC_USERNAME', 'root'),
+            'password' => env('DB_BASIC_PASSWORD', ''),
+            'unix_socket' => env('DB_BASIC_SOCKET', ''),
+            'charset' => env('DB_BASIC_CHARSET', 'utf8mb4'),
+            'collation' => env('DB_BASIC_COLLATION', 'utf8mb4_unicode_ci'),
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+        'pro_vita' => [
+            'driver' => 'mysql',
+            'url' => env('DB_URL'),
+            'host' => env('DB_VITA_HOST', '127.0.0.1'),
+            'port' => env('DB_VITA_PORT', '3306'),
+            'database' => env('DB_VITA_DATABASE', 'pro_vita'),
+            'username' => env('DB_VITA_USERNAME', 'root'),
+            'password' => env('DB_VITA_PASSWORD', ''),
+            'unix_socket' => env('DB_VITA_SOCKET', ''),
+            'charset' => env('DB_VITA_CHARSET', 'utf8mb4'),
+            'collation' => env('DB_VITA_COLLATION', 'utf8mb4_unicode_ci'),
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+        'pro_fresh' => [
+            'driver' => 'mysql',
+            'url' => env('DB_URL'),
+            'host' => env('DB_FRESH_HOST', '127.0.0.1'),
+            'port' => env('DB_FRESH_PORT', '3306'),
+            'database' => env('DB_FRESH_DATABASE', 'pro_fresh'),
+            'username' => env('DB_FRESH_USERNAME', 'root'),
+            'password' => env('DB_FRESH_PASSWORD', ''),
+            'unix_socket' => env('DB_FRESH_SOCKET', ''),
+            'charset' => env('DB_FRESH_CHARSET', 'utf8mb4'),
+            'collation' => env('DB_FRESH_COLLATION', 'utf8mb4_unicode_ci'),
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
     ],
 
     /*
