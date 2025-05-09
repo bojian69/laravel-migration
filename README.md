@@ -18,7 +18,7 @@ php artisan make:migration create_flights_table
 # 运行迁移 or 指定数据库
 php artisan migrate
 
-php artisan migrate:fresh --database=pro_basic
+php artisan migrate --database=pro_baseline
 # 查看已运行迁移
 php artisan migrate:status
 
